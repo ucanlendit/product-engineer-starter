@@ -8,7 +8,7 @@ import { ThemeProvider as NextThemesProvider } from "next-themes";
 export function Providers({ children, themeProps }) {
 	return (
 		<NextUIProvider>
-			<NextThemesProvider {...themeProps}>{children}</NextThemesProvider>
+			<NextThemesProvider {...themeProps} defaultTheme="light">{children}</NextThemesProvider>
 		</NextUIProvider>
 	);
 }
