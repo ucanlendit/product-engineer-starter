@@ -72,8 +72,7 @@ export default function MedicalRecord({ onDone }) {
                 system, or you can drag-and-drop.
               </p>
               <p className="mb-4">
-                Only a single PDF can be uploaded. When you are ready, press
-                'Continue'.
+                Only a single PDF can be uploaded. When you are ready, press the button below.
               </p>
             </>
           ) : (
