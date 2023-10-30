@@ -23,10 +23,7 @@ const BasicTailwind = () => {
     });
 
   useEffect(() => {
-    console.log("state.currentStep", state.currentStep);
     return () => {
-      console.log("state.currentStep return", state.currentStep);
-
       if (state.currentStep === 2) {
         localStorage.setItem("caseID", null);
       }

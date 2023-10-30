@@ -55,7 +55,6 @@ function CaseTable({ cases }) {
     <>
       <Table className={`table-auto`}>
         <TableHeader>
-          <TableColumn>ID</TableColumn>
           <TableColumn>File Name</TableColumn>
           <TableColumn>Time Stamp</TableColumn>
           <TableColumn>View</TableColumn>
@@ -63,7 +62,6 @@ function CaseTable({ cases }) {
         <TableBody>
           {cases.map((caseData, index) => (
             <TableRow key={index}>
-              <TableCell>{caseData.id}</TableCell>
               <TableCell>{caseData.medicalRecord}</TableCell>
               <TableCell>
                 {new Date(caseData.timestamp).toLocaleString()}

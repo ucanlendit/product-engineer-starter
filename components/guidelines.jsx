@@ -37,7 +37,6 @@ export default function Guidelines({ onDone }) {
       body: JSON.stringify({ guidelinesText: text }),
     })
       .then((response) => {
-        console.log("response", {response})
         if (!response.ok) {
           throw new Error("Unable to submit guidelines. Please try again.");
         }

@@ -24,7 +24,6 @@ export default function MedicalRecord({ onDone }) {
 
     const formData = new FormData();
     formData.append("medicalRecord", file);
-    console.log("formData", { formData, file });
     fetch("/api/medical-record", {
       method: "POST",
       body: formData,
@@ -54,7 +53,6 @@ export default function MedicalRecord({ onDone }) {
         setError(error);
       });
   };
-  console.log("file", file);
   return (
     <div className="w-[65%]">
       <FileUploader
